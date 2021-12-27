@@ -1,5 +1,12 @@
 const WebTheme = {
 
+    Logo: {
+        
+        color: '#244DDD',
+        fontFamily: "'Gochi Hand', cursive",
+        fontSize : '46px'
+    },
+
     Typography: {
 
         color: "#FFFFFF",
