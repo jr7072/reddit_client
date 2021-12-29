@@ -1,10 +1,10 @@
 const WebTheme = {
 
     Logo: {
-        
+
         color: '#244DDD',
         fontFamily: "'Gochi Hand', cursive",
-        fontSize : '46px'
+        fontSize: "46px",
     },
 
     Typography: {
@@ -12,12 +12,11 @@ const WebTheme = {
         color: "#FFFFFF",
         fontFamily: "'Gochi Hand', cursive",
         fontSize: "16px",
-
     },
 
     mainBlocks: {
 
-        backgroundColor: "#21A3DB",
+        backgroundColor: "#000000",
     }, 
 
     contrastBlocks: {
