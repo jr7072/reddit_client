@@ -9,9 +9,8 @@ const WebTheme = {
 
     Typography: {
 
-        color: "#FFFFFF",
+        color: "#000000",
         fontFamily: "'Gochi Hand', cursive",
-        fontSize: "16px",
     },
 
     mainBlocks: {
