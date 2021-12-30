@@ -1,5 +1,4 @@
 import React from 'react';
-import './Nav.css';
 import search from '../../Assets/Icons/search.png';
 import menu from '../../Assets/Icons/menu.png';
 import stylesheet from '../../Stylesheets/Theme';
@@ -15,9 +14,6 @@ export const NavBar = () => {
             </div>
             <button className='search-button' style={stylesheet.contrastBlocks}>
                 <img src={search} alt="search icon" />
-            </button>
-            <button className='categories-button' style={stylesheet.contrastBlocks}>
-                <img src={menu} alt="menu icon" />
             </button>
         </div>
     )
