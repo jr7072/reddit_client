@@ -1,0 +1,98 @@
+.nav-bar .main-nav{
+
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 100%;   
+  }
+  
+  .nav-bar .main-nav .logo{
+  
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-bar .main-nav .logo .logo-container{
+  
+    width: 50%;
+    height: 80px;
+  }
+  
+  .nav-bar .main-nav .search-button{
+  
+    border-style: none;
+    border: 2px solid #000000;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .nav-bar .main-nav button img{
+    width: 100%;
+    height: auto;
+  }
+  
+  .nav-bar .main-nav .search-button {
+  
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+  
+  .nav-bar .nav-dropdown{
+  
+    max-height: 0px;
+    height: 1px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    will-change: max-height;
+    transition: max-height .5s ease;
+  }
+  
+  .nav-bar .nav-dropdown .nav-search{
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-bar .nav-dropdown .nav-search form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-bar .nav-dropdown .nav-search form #search-bar{
+  
+    margin-right: 10px;
+    height: 35%;
+    width: 25%;
+    background-color: #eeeeee;
+    border-style: none;
+    border-radius: 5px;
+  }
+  
+  .nav-bar .nav-dropdown .nav-search form button{
+  
+    border-style: none;
+    background: none;
+    cursor: pointer;
+    height: 35%;
+    width: auto;
+  }
+  
+  .nav-bar .nav-dropdown .nav-search form button img{
+  
+    height: 100%;
+    width: auto;
+  }

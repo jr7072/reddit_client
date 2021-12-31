@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import search from '../../Assets/Icons/search.png';
 import stylesheet from '../../Stylesheets/Theme';
 import { SearchBar } from '../../Features/Search/SearchBar';
+import './Nav.css';
 
 
 export const NavBar = () => {
