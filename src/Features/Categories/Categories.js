@@ -3,6 +3,7 @@ import hot from '../../Assets/Icons/hot.png';
 import newIcon from '../../Assets/Icons/new.png';
 import top from '../../Assets/Icons/top.png';
 import rising from '../../Assets/Icons/rising.png';
+import './Categories.css';
 
 export const Categories = () => {
 
