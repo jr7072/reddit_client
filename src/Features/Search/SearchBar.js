@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import search from '../../Assets/Icons/search.png';
+import { useDispatch, useSelector } from 'react-redux';
+import { changeTerm } from './searchSlice';
 
 export const SearchBar = () => {
 
     const [term, setTerm] = useState('');
+    const dispatch = useDispatch();
 
     const handleChange = (e) =>{
 
@@ -12,7 +15,9 @@ export const SearchBar = () => {
         setTerm(value);
     }
 
-    const handleClick = () =>{
+    const handleClick = (e) =>{
+        e.preventDefault();
+        dispatch(changeTerm(term));
         setTerm('');
     }
 
