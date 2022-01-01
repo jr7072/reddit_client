@@ -43,7 +43,7 @@ export const NavBar = () => {
                 </button>
             </div>
             <div className='nav-dropdown'>
-                <div className='nav-search'>
+                <div className='nav-search' data-testid='search area'>
                     <SearchBar />
                 </div>
             </div>

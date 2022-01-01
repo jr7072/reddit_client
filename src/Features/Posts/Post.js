@@ -45,12 +45,12 @@ export const Post = (prop) => {
     }
 
     return(
-        <div className='post' style={stylesheet.Typography}>
+        <div className='post' style={stylesheet.Typography} data-testid="post">
             <div className='post-votes'>
                 <div className='up-votes-wrapper'>
                     <div className='up-arrow-wrapper'>
                         <button onClick={handleClick} className='up-arrow'>
-                            {upArrowClicked? <img id='up-arrow' src={arrowFilled} alt='up arrow' /> : <img id='up-arrow' src={arrow} alt='up arrow'/>}
+                            {upArrowClicked? <img id='up-arrow' src={arrowFilled} alt='up arrow' data-testid='up-arrow-filled' /> : <img id='up-arrow' src={arrow} alt='up arrow' data-testid='up-arrow-unfilled'/>}
                         </button>
                     </div>
                     <div className='count-wrapper'>
@@ -58,7 +58,7 @@ export const Post = (prop) => {
                     </div>
                     <div className='down-arrow-wrapper'>
                         <button onClick={handleClick} className='down-arrow'>
-                            {downArrowClicked? <img id='down-arrow' src={arrowFilled} alt='down arrow' /> : <img id='down-arrow' src={arrow} alt='down arrow'/>}
+                            {downArrowClicked? <img id='down-arrow' src={arrowFilled} alt='down arrow' data-testid='down-arrow-filled' /> : <img id='down-arrow' src={arrow} alt='down arrow' data-testid='down-arrow-unfilled'/>}
                         </button>
                     </div>
                 </div>

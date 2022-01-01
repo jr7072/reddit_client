@@ -19,7 +19,7 @@ export const SearchBar = () => {
     return(
 
         <form>
-            <input type='search' id='search-bar' name='search' value={term} onChange={handleChange} />
+            <input type='search' id='search-bar' name='search' value={term} onChange={handleChange}/>
             <button onClick={handleClick}>
                 <img src={search} alt='search' />
             </button>
