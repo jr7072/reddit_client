@@ -54,7 +54,7 @@ export const Post = (prop) => {
                         </button>
                     </div>
                     <div className='count-wrapper'>
-                        {prop.upVotes? <p>{prop.upVotes}</p> : <p>error</p>}
+                        {prop.upVotes? <p>{prop.upVotes}</p> : <p>0</p>}
                     </div>
                     <div className='down-arrow-wrapper'>
                         <button onClick={handleClick} className='down-arrow'>
@@ -83,7 +83,7 @@ export const Post = (prop) => {
                         <button className='comment-button'>
                             <img src={comment} alt='comment' />
                         </button>
-                        {prop.postCommentCount? <p>{prop.postCommentCount}</p>: <p>Error</p>}
+                        {prop.postCommentCount? <p>{prop.postCommentCount}</p>: <p>unknown</p>}
                     </div>
                 </div>
             </div>

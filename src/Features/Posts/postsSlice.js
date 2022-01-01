@@ -34,7 +34,7 @@ const options = {
                     key: post.data.id,
                     upVotes: post.data.ups,
                     postTitle: post.data.title,
-                    postImage: post.data.thumbnail,
+                    postImage: post.data.url,
                     postUser: post.data.author,
                     postTime: post.data.created,
                     postCommentCount: post.data.num_comments,
