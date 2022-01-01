@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectPosts, loadPostsByCategory } from './postsSlice';
+import { selectCategory } from '../Categories/categoriesSlice';
 import { Post } from './Post';
 import './Posts.css';
 
@@ -8,10 +9,11 @@ export const Posts = () => {
 
     const dispatch = useDispatch();
     const posts = useSelector(selectPosts);
+    const category = useSelector(selectCategory);
 
     useEffect(() => {
-        dispatch(loadPostsByCategory({category: 'hot'}));
-    }, []);
+        dispatch(loadPostsByCategory({category: category}));
+    }, [category, dispatch]);
 
     return(
         <div className="posts">
