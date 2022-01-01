@@ -66,7 +66,7 @@ export const Post = (prop) => {
             <div className='body-footer-wrapper'>
                 <div className='post-body'>
                     <div className='post-title-wrapper'>
-                        {prop.postTitle? <h2 className='post-title'>{prop.postTitle}Title</h2>: <h2>Error</h2>}
+                        {prop.postTitle? <h2 className='post-title'>{prop.postTitle}</h2>: <h2>Error</h2>}
                     </div>
                     <div className='post-image-wrapper'>
                         {prop.postImage? <img className='post-image' src={prop.postImage} alt='post'/> : null}
@@ -83,7 +83,7 @@ export const Post = (prop) => {
                         <button className='comment-button'>
                             <img src={comment} alt='comment' />
                         </button>
-                        {prop.postCommentCount? <p>{prop.commentCount}</p>: <p>Error</p>}
+                        {prop.postCommentCount? <p>{prop.postCommentCount}</p>: <p>Error</p>}
                     </div>
                 </div>
             </div>

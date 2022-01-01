@@ -4,6 +4,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    flex-wrap: wrap;
   
 }
   
@@ -97,6 +98,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
   
 .posts .post .body-footer-wrapper .post-body .post-image-wrapper .post-image{
