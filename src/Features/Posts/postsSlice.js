@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const loadPostsByCategory = createAsyncThunk('posts/loadPostsByCategory', async (arg, thunkAPI) => {
-    const route = `https://www.reddit.com/r/Home/${arg.category}.json?limit=20`
+    const route = `https://www.reddit.com/r/${arg.term}/${arg.category}.json?limit=20`
     const requestBody = await fetch(route);
     const jsonResponse = await requestBody.json();
     return jsonResponse;
