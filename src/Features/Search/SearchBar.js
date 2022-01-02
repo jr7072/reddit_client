@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import search from '../../Assets/Icons/search.png';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch} from 'react-redux';
 import { changeTerm } from './searchSlice';
 
 export const SearchBar = () => {
