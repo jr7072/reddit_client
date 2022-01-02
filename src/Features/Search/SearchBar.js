@@ -17,7 +17,8 @@ export const SearchBar = () => {
 
     const handleClick = (e) =>{
         e.preventDefault();
-        dispatch(changeTerm(term));
+        const cleanTerm = term.toLowerCase().replace(/ +/g, "");
+        dispatch(changeTerm(cleanTerm));
         setTerm('');
     }
 

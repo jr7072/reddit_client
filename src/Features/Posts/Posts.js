@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { selectPosts, loadPostsByCategory, selectIsLoadingPosts } from './postsSlice';
+import { selectPosts, selectIsLoadingPosts, selectHasError, loadPostsByCategory } from './postsSlice';
 import { selectCategory } from '../Categories/categoriesSlice';
 import { selectTerm } from '../Search/searchSlice';
 import { Post } from './Post';
@@ -12,6 +12,8 @@ export const Posts = () => {
     const posts = useSelector(selectPosts);
     const category = useSelector(selectCategory);
     const searchTerm = useSelector(selectTerm);
+    const isLoadingPosts = useSelector(selectIsLoadingPosts);
+    const hasError = useSelector(selectHasError);
 
     useEffect(() => {
         dispatch(loadPostsByCategory({category: category, term: searchTerm}));
@@ -30,6 +32,8 @@ export const Posts = () => {
                         postUser={post.postUser}
                         postTime={post.postTime}
                         postCommentCount={post.postCommentCount}
+                        isLoading={isLoadingPosts}
+                        hasError={hasError}
                     />
                 );
             })}
