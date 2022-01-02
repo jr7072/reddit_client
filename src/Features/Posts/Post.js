@@ -63,8 +63,6 @@ export const Post = (prop) => {
         
     }
 
-
-
     return(
         <div className='post' style={stylesheet.Typography} data-testid="post">
             <div className='post-votes'>
