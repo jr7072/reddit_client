@@ -63,8 +63,6 @@ export const Post = (prop) => {
         
     }
 
-
-
     return(
         <div className='post' style={stylesheet.Typography} data-testid="post">
             <div className='post-votes'>
@@ -104,7 +102,7 @@ export const Post = (prop) => {
                         <button className='comment-button' onClick={handleClick}>
                             <img id='comment' src={comment} alt='comment' />
                         </button>
-                        {prop.postCommentCount? <p>{prop.postCommentCount}</p>: <p>unknown</p>}
+                        {prop.postCommentCount? <p>{prop.postCommentCount}</p>: <p>0</p>}
                     </div>
                 </div>
                 <div className='comments-wrapper' style={!commentsActive? {display: 'none'} : {display: 'flex'}}>
