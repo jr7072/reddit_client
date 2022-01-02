@@ -34,14 +34,12 @@ const options = {
                     key: post.data.id,
                     upVotes: post.data.ups,
                     postTitle: post.data.title,
-                    postImage: post.data.url,
+                    postImage: post.data.url_overridden_by_dest,
                     postUser: post.data.author,
                     postTime: post.data.created,
                     postCommentCount: post.data.num_comments,
                 }
             })
-
-            console.log(state.posts);
             
             state.isLoadingPosts = false;
             state.hasError = false;

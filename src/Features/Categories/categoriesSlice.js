@@ -24,7 +24,6 @@ const options = {
 
             for(let key of Object.keys(state.activeStatuses)){
                 
-                console.log(key);
                 if(key === action.payload){
                     state.activeStatuses[key] = true;
                     continue;

@@ -78,7 +78,7 @@
 .posts .post .body-footer-wrapper .post-body{
   
     width: 100%;
-    min-height: 60%;
+    min-height: auto;
     border-bottom: 1px solid #928d8d;
 }
   
@@ -138,4 +138,10 @@
   
     height: 100%;
     width: auto; 
+}
+
+.posts .post .body-footer-wrapper .comments-wrapper{
+
+    height: auto;
+    width: 100%;
 }
