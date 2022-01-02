@@ -22,7 +22,8 @@ export const Posts = () => {
             {posts.map(post => {
                 return (
                     <Post
-                        key={post.key} 
+                        key={post.key}
+                        id={post.key} 
                         upVotes={post.upVotes}
                         postTitle={post.postTitle}
                         postImage={post.postImage}
