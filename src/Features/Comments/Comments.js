@@ -20,6 +20,8 @@ export const Comments = (prop) => {
                         key = {comment.id}
                         user = {comment.author}
                         comment = {comment.body}
+                        isLoading = {isLoadingComments}
+                        hasError = {hasError}
                     />
                 )
             })}
