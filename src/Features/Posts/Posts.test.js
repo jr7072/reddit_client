@@ -1,17 +1,24 @@
 import React from 'react';
-import { render, fireEvent, screen, cleanup} from '@testing-library/react';
-import { act } from 'react-dom/test-utils';
-import { mount, configure, shallow } from 'enzyme';
+import { render, screen, cleanup} from '@testing-library/react';
+import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
+import { Provider } from 'react-redux';
 import { Post } from './Post';
+import store from '../../store';
 
 afterEach(cleanup);
 
 configure({ adapter: new Adapter() })
 
-test('the post renders in an error state', () => {
+test('the post renders', () => {
 
-    render(<Post />);
+    
+
+    render (
+        <Provider store={store}>
+            <Post />
+        </Provider>
+    ); 
 
     const post = screen.getByTestId(/post/i);
 
@@ -21,7 +28,13 @@ test('the post renders in an error state', () => {
 
 test('the post upvote is not filled at start', () => {
 
-    render(<Post />);
+
+
+    render (
+        <Provider store={store}>
+            <Post />
+        </Provider>
+    ); 
 
     const upArrowUnfilled = screen.getByTestId(/up-arrow-unfilled/i);
 
@@ -30,7 +43,13 @@ test('the post upvote is not filled at start', () => {
 
 test('the post downvote is not filled at start', () => {
 
-    render(<Post />);
+   
+
+    render (
+        <Provider store={store}>
+            <Post />
+        </Provider>
+    ); 
 
     const downArrowUnfilled = screen.getByTestId(/down-arrow-unfilled/i);
 
