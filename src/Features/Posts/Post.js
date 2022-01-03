@@ -16,6 +16,7 @@ export const Post = (prop) => {
     const comments = useSelector(selectComments);
     const subTerm = useSelector(selectTerm);
     const dispatch = useDispatch();
+    const time = new Date(prop.postTime * 1000);
 
     const handleClick = (e) => {
 
@@ -96,7 +97,7 @@ export const Post = (prop) => {
                         {prop.postUser? <p>{prop.postUser}</p>: <p>Error</p>}
                     </div>
                     <div className='post-time-wrapper'>
-                        {prop.postTime? <p>{prop.postTime}</p>: <p>Error</p>}
+                        {prop.postTime? <p>{time.toLocaleDateString()}</p>: <p>Error</p>}
                     </div>
                     <div className='comment-button-wrapper'>
                         <button className='comment-button' onClick={handleClick}>

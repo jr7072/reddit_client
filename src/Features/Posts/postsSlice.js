@@ -28,7 +28,7 @@ const options = {
         [loadPostsByCategory.fulfilled]: (state, action) => {
 
             const posts = action.payload.data.children;
-
+    
             state.posts = posts.map(post => {
                 return {
                     key: post.data.id,
