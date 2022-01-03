@@ -35,7 +35,7 @@ export const NavBar = () => {
             <div className='main-nav' style={stylesheet.mainBlocks}>
                 <div className='logo'>
                     <div className="logo-container">
-                        <h1 style={stylesheet.Logo}> Reddit Minimal </h1>
+                        <h1 style={stylesheet.Logo}><span style={{color: '#2DDFFF'}}>Reddit</span>Minimal</h1>
                     </div>
                 </div>
                 <button className='search-button' onClick={handleClick} style={stylesheet.contrastBlocks}>

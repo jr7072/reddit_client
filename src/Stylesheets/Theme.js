@@ -2,7 +2,7 @@ const WebTheme = {
 
     Logo: {
 
-        color: '#244DDD',
+        color: '#000000',
         fontFamily: "'Gochi Hand', cursive",
         fontSize: "46px",
     },
@@ -15,13 +15,15 @@ const WebTheme = {
 
     mainBlocks: {
 
-        backgroundColor: "#000000",
+        boxShadow: "0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2)",
+        backgroundColor: "#FFFFFF",
     }, 
 
     contrastBlocks: {
 
         borderRadius: "10px",
-        backgroundColor: "#244DDD"
+        backgroundColor: "#EEEEEE",
+        boxShadow: "0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2)"
     },
 
 };
