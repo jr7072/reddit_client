@@ -52,22 +52,34 @@ export const Categories = () => {
     return (
         <div className='categories' >
             <div className='categories-wrapper'>
-                <button className='hot-button' onClick={handleClick} id='hot' style={activeStatuses.hot? {backgroundColor: '#eeeeee'}: null}>
-                    <img src={hot} alt='hot'/>
-                    <h2>Hot</h2>
-                </button>
-               <button className='new-button' onClick={handleClick} id='new' style={activeStatuses.new? {backgroundColor: '#eeeeee'}: null}>
-                    <img src={newIcon} alt='new'/>
-                    <h2>New</h2>
-                </button>
-                <button className='top-button' onClick={handleClick} id='top' style={activeStatuses.top? {backgroundColor: '#eeeeee'}: null}>
-                    <img src={top} alt='top' />
-                    <h2>Top</h2>
-                </button>
-                <button className='rising-button' onClick={handleClick} id='rising' style={activeStatuses.rising? {backgroundColor: '#eeeeee'}: null}>
-                    <img src={rising} alt='rising' />
-                    <h2>Rising</h2>
-                </button>
+                <div className='button-wrapper top-button'>
+                    <button className='hot-button' onClick={handleClick} id='hot'></button>
+                    <div className='button-style-wrapper' style={activeStatuses.hot? {backgroundColor: '#eeeeee'}: null}>
+                        <img src={hot} alt='hot'/>
+                        <h2>Hot</h2>
+                    </div>
+                </div>
+                <div className='button-wrapper'>
+                    <button className='new-button' onClick={handleClick} id='new'></button>
+                    <div className='button-style-wrapper' style={activeStatuses.new? {backgroundColor: '#eeeeee'}: null}>
+                        <img src={newIcon} alt='new'/>
+                        <h2>New</h2>
+                    </div>
+                </div>
+                <div className='button-wrapper'>
+                    <button className='top-button' onClick={handleClick} id='top'></button>
+                    <div className='button-style-wrapper' style={activeStatuses.top? {backgroundColor: '#eeeeee'}: null}>
+                        <img src={top} alt='top' />
+                        <h2>Top</h2>
+                    </div>
+                </div>
+                <div className='button-wrapper bottom-button'>
+                    <button className='rising-button' onClick={handleClick} id='rising' ></button>
+                    <div className='button-style-wrapper' style={activeStatuses.rising? {backgroundColor: '#eeeeee'}: null}>
+                        <img src={rising} alt='rising' />
+                        <h2>Rising</h2>
+                    </div>
+                </div>
             </div>
         </div>
     )
